@@ -1,4 +1,4 @@
-# AI Chatbot with Persistent Memory
+# Multi Agent Chatbot 
 
 An AI-powered chatbot that maintains **persistent chat histories** and supports **multiple conversation threads**. Built with **LangGraph** and **LangChain**, it uses **HuggingFace LLaMA-3.2-1B** for natural language understanding and response generation, **Streamlit** for the frontend, and **SQLite** for storing chat states. The system is future-ready for **RAG (Retrieval-Augmented Generation)** to provide knowledge-based responses.
 

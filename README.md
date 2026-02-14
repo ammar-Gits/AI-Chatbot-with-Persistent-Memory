@@ -1,4 +1,4 @@
-# 🧠 Multi-Agent Intelligent Chatbot (RAG + Tool-Enabled AI)
+# 🧠 Multi-Agent Intelligent Chatbot (RAG + Tool Enabled)
 
 An advanced **Multi-Agent Intelligent Chatbot** powered by **Retrieval-Augmented Generation (RAG)** and dynamic **tool integration**.
 

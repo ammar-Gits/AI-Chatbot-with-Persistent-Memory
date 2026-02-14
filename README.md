@@ -1,22 +1,116 @@
-# Multi Agent Chatbot 
+# 🧠 Multi-Agent Intelligent Chatbot (RAG + Tool-Enabled AI)
 
-An AI-powered chatbot that maintains **persistent chat histories** and supports **multiple conversation threads**. Built with **LangGraph** and **LangChain**, it uses **HuggingFace LLaMA-3.2-1B** for natural language understanding and response generation, **Streamlit** for the frontend, and **SQLite** for storing chat states. The system is future-ready for **RAG (Retrieval-Augmented Generation)** to provide knowledge-based responses.
+An advanced **Multi-Agent Intelligent Chatbot** powered by **Retrieval-Augmented Generation (RAG)** and dynamic **tool integration**.
 
----
-
-## Features
-
-- **Persistent Conversations:** Save and resume chats across sessions with SQLite.  
-- **Multiple Threads:** Start new chats or switch between existing threads seamlessly.  
-- **AI-Powered Responses:** HuggingFace LLaMA-3.2-1B handles natural language understanding and generation.  
-- **Interactive Frontend:** Streamlit UI with real-time streaming of assistant responses.  
-- **Future RAG Integration:** Plans to retrieve information from external knowledge sources for more informed answers.  
+This project combines LLM reasoning, semantic retrieval, and multiple AI agents capable of using tools to solve complex tasks beyond simple text generation.
 
 ---
 
-## Installation
+## 🚀 Overview
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/ai-chatbot.git
-   cd ai-chatbot
+Unlike traditional chatbots, this system:
+
+- 🧠 Uses **Retrieval-Augmented Generation (RAG)** for factual grounding  
+- 🤖 Supports **Multiple Specialized Agents**  
+- 🛠️ Enables **Tool Usage (Function Calling)**  
+- 🔎 Performs semantic search over a knowledge base  
+- ⚡ Provides an interactive frontend + API backend  
+
+This makes the chatbot capable of reasoning, retrieving, deciding, and executing actions dynamically.
+
+---
+
+## 🏗️ System Architecture
+
+### 🔄 High-Level Flow
+
+User → Frontend → Backend API
+↓
+Agent Router
+↓
+Selected Agent
+↓
+(Optional) Tool Execution
+↓
+RAG Retrieval (if needed)
+↓
+LLM Response Generation
+↓
+Response to User
+
+
+---
+
+## 🤖 Multi-Agent Design
+
+The system includes multiple intelligent agents, such as:
+
+- 📚 **Knowledge Agent** – Uses RAG to retrieve information from vector database  
+- 🧮 **Computation Agent** – Handles calculations and structured tasks  
+- 🌐 **Tool Agent** – Executes backend-defined tools or external APIs  
+- 🧠 **Reasoning/Router Agent** – Decides which agent or tool should handle the query  
+
+An internal router determines which agent (or sequence of agents) should handle the user query.
+
+---
+
+## 🛠️ Tool-Enabled AI
+
+This chatbot supports tool/function calling, enabling it to:
+
+- Perform calculations
+- Retrieve external data
+- Process structured inputs
+- Execute backend-defined utilities
+- Chain tool outputs into final responses
+
+This transforms the chatbot from a static responder into a **decision-making AI system**.
+
+---
+
+## ✨ Features
+
+- 🔎 Retrieval-Augmented Generation (RAG)
+- 🤖 Multi-Agent architecture
+- 🛠️ Dynamic tool usage
+- 🧠 Context-aware reasoning
+- ⚡ FastAPI-based backend
+- 🎨 Interactive frontend interface
+- 📦 Modular & extensible design
+
+---
+
+## 🧰 Tech Stack
+
+### Backend
+- Python
+- FastAPI
+- OpenAI / LLM API
+- Vector Database (FAISS / ChromaDB)
+- Embedding Models
+- Tool / Function Calling Framework
+
+### Frontend
+- Python (Streamlit / Gradio / Custom UI)
+- REST API Integration
+
+---
+
+## 📂 Project Structure
+
+├── rag_chatbot_backend.py # Multi-agent backend with RAG + tools
+├── rag_chatbot_frontend.py # Frontend UI
+├── requirements.txt # Dependencies
+├── .env # API keys & configs
+└── README.md
+
+
+---
+
+## ⚙️ Installation
+
+### 1️⃣ Clone Repository
+
+```bash
+git clone https://github.com/ammar-Gits/multi-agent-intelligent-chatbot.git
+cd multi-agent-chatbot
